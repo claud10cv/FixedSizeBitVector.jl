@@ -11,7 +11,7 @@ function Base.setindex!(b::BitVector2048, x::Bool, i::T)::Nothing where T <: Int
     return nothing
 end
 
-BitVector2048() = BitVector2048(BitVector512(), BitVector512())
+BitVector2048() = BitVector2048(BitVector1024(), BitVector1024())
 
 function BitVector2048(s::Vector{T})::BitVector2048 where T <: Integer
     x = BitVector2048()
