@@ -65,3 +65,6 @@ end
 function flip(a::BitVector256)::BitVector256
     return BitVector256(flip(a.l), flip(a.r))
 end
+function count(a::BitVector256)::UInt64
+    return count_ones(a.l) + count_ones(a.r)
+end
