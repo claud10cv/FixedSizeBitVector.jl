@@ -73,6 +73,6 @@ function flip(a::BitVector8)::BitVector8
     return BitVector8(~a.x)
 end
 
-function count(a::BitVector8)::UInt64
+function count_ones(a::BitVector8)::UInt64
     return count_ones(a.x)
 end
