@@ -72,6 +72,6 @@ end
 function flip(a::BitVector16)::BitVector16
     return BitVector16(~a.x)
 end
-function count(a::BitVector16)::UInt64
+function count_ones(a::BitVector16)::UInt64
     return count_ones(a.x)
 end
