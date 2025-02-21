@@ -9,6 +9,7 @@ module FixedSizeBitVector
     import Base.empty!
     import Base.issubset
     import Base.~
+    import Base.count_ones
 
     include("struct.jl")
     include("common.jl")
@@ -23,6 +24,6 @@ module FixedSizeBitVector
     include("bitvector2048.jl")
     include("bitvector4096.jl")
 
-    export issubset, (==), (⊻), (&), (|), set!, reset!, flip!, flip, zero, count
+    export issubset, (==), (⊻), (&), (|), set!, reset!, flip!, flip, zero, count_ones
     export BitVector8, BitVector16, BitVector32, BitVector64, BitVector128, BitVector256, BitVector512, BitVector1024, BitVector2048, BitVector4096
 end # module FixedSizeBitVector
