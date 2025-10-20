@@ -17,6 +17,8 @@ w = x & y # Bitwise AND
 t = x ⊻ z # Bitwise XOR
 v = flip(t) # Flips the bits, returns a new BitVector
 count_ones(t) # Returns the number of bits that are set in the bitvector
+any(t) # returns true if at least one bit is set
+none(t) # returns true if no bit is set
 flip!(v) # Flips the bits, in-place
 set!(v) # Sets the bits all to true, in-place
 reset!(v) # Sets the bits all to false, in-place
