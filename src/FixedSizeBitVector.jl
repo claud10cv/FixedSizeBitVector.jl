@@ -35,7 +35,7 @@ module FixedSizeBitVector
             flip, 
             zero, 
             count_ones, 
-            copy!
+            copy!,
             any,
             none
             
