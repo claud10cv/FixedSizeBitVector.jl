@@ -68,3 +68,11 @@ end
 function count_ones(a::BitVector1024)::UInt64
     return count_ones(a.l) + count_ones(a.r)
 end
+
+function any(a::BitVector1024)::Bool
+    return any(a.l) || any(a.r)
+end
+
+function none(a::BitVector1024)::Bool
+    return none(a.l) && none(a.r)
+end

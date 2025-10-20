@@ -75,3 +75,11 @@ end
 function count_ones(a::BitVector16)::UInt64
     return count_ones(a.x)
 end
+
+function any(a::BitVector16)::Bool
+    return a.x > 0
+end
+
+function none(a::BitVector16)::Bool
+    return a.x == 0
+end
